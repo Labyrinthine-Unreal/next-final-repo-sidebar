@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Box, SimpleGrid, Flex } from "@chakra-ui/react"
+import { Box, SimpleGrid, Flex, Text } from "@chakra-ui/react"
 import properties from "../components/data/properties"
 import MintAnimation from "../components/mintComp/MintAnimation"
 import MintTitle from "../components/mintComp/MintTitle"
@@ -45,6 +45,10 @@ export default function TaurosPage() {
                                     {item.description}
                                 </Flex>
                             </Flex>
+                            <Flex pt={80} pb={4} fontSize='22px'>
+                                {item.unclaimed}
+                            </Flex>
+                            <Text>This does not have to be placed in properties.js, we can set it up anywhere.</Text>
                         </Box>
                     </SimpleGrid>
                 </Flex>
