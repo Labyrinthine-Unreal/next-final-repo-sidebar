@@ -37,7 +37,7 @@ export default function Home() {
         
         <Flex pb={20}>
           <Sidebar />
-          <Flex direction="column" alignItems="center" width="100%" pt={70}>
+          <Flex direction="column" alignItems="center" width="100%" pt={70} p={20}>
               <Text 
                 pl={40} pr={40} pb={5} fontWeight="semibold" fontSize="2xl" alignSelf="flex-start">
                 Lorem ipsum dolor sit amet

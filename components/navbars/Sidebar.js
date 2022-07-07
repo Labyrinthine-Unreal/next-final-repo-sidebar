@@ -8,7 +8,7 @@ export default function Sidebar() {
     const [navSize, changeNavSize] = useState("large")
     return (
         <Flex
-            pos="sticky"
+            pos="fixed"
             left="5"
             h="95vh"
             boxShadow="0 4px 12px 0 rgba(0, 0, 0, 0.05)"

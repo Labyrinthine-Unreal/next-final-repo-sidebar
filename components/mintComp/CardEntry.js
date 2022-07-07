@@ -22,7 +22,7 @@ export default function CardEntry(props) {
                         presalePrice={props.presalePrice}
                         salePrice={props.salePrice}
                     />
-                    <Flex fontSize="18px" justify="right" align="center">
+                    <Flex fontSize="18px" justify="right" align="center" opacity='revert-layer'>
                         <MoreInfo info={props.info} href={props.href} />
                     </Flex>
                 </SimpleGrid>
