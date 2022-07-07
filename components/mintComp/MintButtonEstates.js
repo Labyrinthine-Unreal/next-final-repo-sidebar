@@ -67,7 +67,7 @@ export default function MintButtonEstates({ user }) {
                     type="submit"
                     disabled={isFetching}
                 >
-                    Claim Estate
+                    Claim Estates
                 </Button>
             </form>
         </Text>

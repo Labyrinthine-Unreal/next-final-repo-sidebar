@@ -1,21 +1,20 @@
 import { Box, SimpleGrid } from "@chakra-ui/react"
 import properties from "../components/data/properties"
-import MintAnimation from "../components/MintComponents/MintAnimation"
-import MintTitle from "../components/MintComponents/MintTitle"
-import MintPrice from "../components/MintComponents/MintPrice"
-import MintButton from "../components/MintComponents/MintButton"
-import Footer from "../components/Footer"
+import MintAnimation from "../components/mintComp/MintAnimation"
+import MintTitle from "../components/mintComp/MintTitle"
+import MintPrice from "../components/mintComp/MintPrice"
+import MintButton from "../components/mintComp/MintButton"
+import Footer from "../components/navbar/Footer"
 
 export default function TaurosPage() {
     const item = properties[2];
             
     return (
-        <>
+        <Box bgGradient="linear(to-br, teal.400,purple.300)">
             <SimpleGrid
             columns={{md: 2, sm: 1}} 
                 width="100vw"
                 height="50vw"
-                bgGradient="linear(to-br, teal.400,purple.300)"
             >
                 <Box pt={100} align='right' pr={10}>
                     <Box maxW='260' borderWidth='1px' bg='white' borderRadius='lg' overflow="scroll">
@@ -42,7 +41,6 @@ export default function TaurosPage() {
                 <Box maxW='400' pt={100} pl={10} align='left'>
                     <Box 
                         mt='1'
-                        fontWeight='semibold'
                         fontSize='sm'
                         as='h6'
                         lineHeight='tight'
@@ -54,6 +52,6 @@ export default function TaurosPage() {
                 </Box>
             </SimpleGrid>
             <Footer />
-        </>
+        </Box>
     )
 }
