@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Flex, IconButton, Divider, Avatar, Heading } from '@chakra-ui/react'
-import { FiMenu, FiHome, FiCalendar, FiUser } from 'react-icons/fi'
-import { ImPen } from 'react-icons/im'
+import { ImMenu, ImPen, ImHome, ImCalendar, ImUser } from 'react-icons/im'
 import NavItem from './NavItem'
 
 export default function Sidebar() {
@@ -27,7 +26,7 @@ export default function Sidebar() {
                     background="none"
                     mt={5}
                     _hover={{background: 'none'}}
-                    icon={<FiMenu />}
+                    icon={<ImMenu />}
                     onClick={() => {
                         if(navSize == "small")
                             changeNavSize("large")
@@ -51,9 +50,9 @@ export default function Sidebar() {
                 </Flex>
                 <Divider display={navSize == "small" ? "none" : "flex"} />
             </Flex>
-                <NavItem navSize={navSize} icon={FiHome} title="Dashboard"/>
-                <NavItem navSize={navSize} icon={FiCalendar} title="Events" />
-                <NavItem navSize={navSize} icon={FiUser} title="Members" />
+                <NavItem navSize={navSize} icon={ImHome} title="Dashboard"/>
+                <NavItem navSize={navSize} icon={ImCalendar} title="Events" />
+                <NavItem navSize={navSize} icon={ImUser} title="Members" />
                 <NavItem navSize={navSize} icon={ImPen} title="Apply" />
                 
             </Flex>
