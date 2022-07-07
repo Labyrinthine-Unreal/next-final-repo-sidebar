@@ -41,7 +41,6 @@ export default function Sidebar() {
                 alignItems={navSize == "small" ? "center" : "flex-start"}
                 mb={4}
             >
-                <Divider display={navSize == "small" ? "none" : "flex"} />
                 <Flex mt={4} mb={4} align="center">
                     <Avatar size="sm" src="../tauros-avatar-black.png" />
                     <Flex flexDir="column" ml={4} display={navSize == "small" ? "none" : "flex"}>
