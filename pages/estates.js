@@ -38,7 +38,7 @@ export default function TaurosPage() {
             <Flex pb={20}>
                 <Sidebar />
                 <Flex direction="column" alignItems="center" width="100%" pt={70}>
-                    <SimpleGrid columns={{lg: 2, md: 2, sm: 1}} spacing={10} spacingY={10}>
+                    <SimpleGrid columns={{md: 2, sm: 1}} spacing={10} spacingY={10}>
                         <Box maxW='260' h={490} borderWidth='1px' bg='#ffffffbb' borderRadius='lg' overflow="hidden">
                             <MintAnimation src={item.imageUrl} alt={item.imageAlt} />
                             <Box p='6' h={50}>

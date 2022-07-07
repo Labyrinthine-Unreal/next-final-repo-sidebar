@@ -4,11 +4,12 @@ export default function MintTitle(props) {
     return (
         <Box 
             mt='1'
+            pb={2}
             fontWeight='semibold'
             fontSize='sm'
             as='h6'
             lineHeight='tight'
-            textAlign='center'
+            textAlign='left'
             verticalAlign='baseline'
         >
             {props.title}

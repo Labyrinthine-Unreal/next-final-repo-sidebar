@@ -1,11 +1,13 @@
+import { Box } from "@chakra-ui/react"
+
 export default function MintPrice(props) {
     return (
-        <div>
+        <div style={{width: "160px"}}>
             <div>
-                Presale: {props.presalePrice}
+                <b>Presale:</b> {props.presalePrice}
             </div>
             <div>
-                Sale: {props.salePrice}
+                <b>Sale:</b> {props.salePrice}
             </div>
         </div>
            
