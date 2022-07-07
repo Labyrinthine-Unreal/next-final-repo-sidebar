@@ -49,10 +49,10 @@ export default function Sidebar() {
                 </Flex>
                 <Divider display={navSize == "small" ? "none" : "flex"} />
             </Flex>
-                <NavItem navSize={navSize} icon={ImHome} title="Dashboard"/>
-                <NavItem navSize={navSize} icon={ImCalendar} title="Events" />
-                <NavItem navSize={navSize} icon={ImUser} title="Members" />
-                <NavItem navSize={navSize} icon={ImPen} title="Apply" />
+                <NavItem navSize={navSize} href="whatever" icon={ImHome} title="Dashboard"/>
+                <NavItem navSize={navSize} href="whatever2" icon={ImCalendar} title="Events" />
+                <NavItem navSize={navSize} href="whatever3" icon={ImUser} title="Members" />
+                <NavItem navSize={navSize} href="whatever4" icon={ImPen} title="Apply" />
                 
             </Flex>
             

@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Box, SimpleGrid, Flex, Center, Button } from "@chakra-ui/react"
+import { Box, SimpleGrid, Flex } from "@chakra-ui/react"
 import properties from "../components/data/properties"
 import MintAnimation from "../components/mintComp/MintAnimation"
 import MintTitle from "../components/mintComp/MintTitle"
@@ -7,6 +7,7 @@ import MintPrice from "../components/mintComp/MintPrice"
 import MintButtonEstates from "../components/mintComp/MintButtonEstates"
 import Sidebar from "../components/navbars/Sidebar"
 import Footer from "../components/navbars/Footer"
+import HeaderSignIn from '../components/navbars/HeaderSignIn'
 
 export default function TaurosPage() {
     const item = properties[1];
@@ -19,21 +20,7 @@ export default function TaurosPage() {
                 </title>
             </Head>
 
-            <header>
-                <Flex px="10" py="6" justifyContent="flex-end" color="white">
-                    <Center justifyContent="flex-end">
-                    <Box justifyContent="flex-end">
-                        <Button colorScheme="purple"
-                        onClick={()=>authenticate({
-                        signingMessage:"Tauros SignIN"
-                        })}>
-                        Metamask Login
-                        </Button>
-                    </Box>
-                    </Center>
-                </Flex>
-            </header>
-
+            <HeaderSignIn />
 
             <Flex pb={20}>
                 <Sidebar />
