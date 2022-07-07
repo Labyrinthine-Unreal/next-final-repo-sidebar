@@ -16,7 +16,7 @@ export default function Home() {
 
         <HeaderSignIn />
         
-        <Flex pb={20}>
+        <Flex>
           <Sidebar />
           <Flex direction="column" alignItems="center" width="100%" pt={70} p={20}>
               <Text 
