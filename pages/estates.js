@@ -28,13 +28,13 @@ export default function TaurosPage() {
                     <SimpleGrid columns={{md: 2, sm: 1}} spacing={10} spacingY={10}>
                         <Box maxW='260' h={490} borderWidth='1px' bg='#ffffffbb' borderRadius='lg' overflow="hidden">
                             <MintAnimation src={item.imageUrl} alt={item.imageAlt} />
-                            <Box p='6' h={50}>
+                            <Box p='6' h={50} textAlign="left">
                                 <MintTitle title={item.title} />
-                                <Box h={10} textAlign='center' as='span' color='gray.600' fontSize='smaller'>
+                                <Box h={10} textAlign='left' as='span' color='gray.600' fontSize='13px'>
                                     <MintPrice presalePrice={item.presalePrice} salePrice={item.salePrice} />
                                 </Box>
                             </Box>
-                            <Box display='flex' h={20} py={12} justifyContent='center'>
+                            <Box display='flex' h={20} py={12} pl={4} justifyContent='center'>
                                 <MintButtonEstates />
                             </Box>
                         </Box>

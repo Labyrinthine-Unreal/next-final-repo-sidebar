@@ -8,7 +8,7 @@ import MoreInfo from "./MoreInfo"
 
 export default function CardEntry(props) {
     return (
-        <Box maxW='260' h={490} borderWidth='1px' bg='#ffffffbb' borderRadius='lg' overflow="scroll">
+        <Box maxW='260' h={490} borderWidth='1px' bg='#ffffffbb' borderRadius='lg' overflow="hidden">
             <MintAnimation 
                 src={props.image}
                 alt={props.alt}

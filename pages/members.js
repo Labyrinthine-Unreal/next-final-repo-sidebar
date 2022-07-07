@@ -20,14 +20,9 @@ export default function MembersPage() {
                 <Flex direction="column" alignItems="center" width="100%" pt={70} p={20}>
                     <Text 
                         pl={40} pr={40} pb={5} fontWeight="semibold" fontSize="2xl" alignSelf="flex-start">
-                        Lorem ipsum dolor sit amet
+                        Requirements
                     </Text>
-                    <Text pl={40} pr={40} pb={20}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit nisi eu erat luctus, non scelerisque magna commodo. Donec ullamcorper, neque convallis lacinia volutpat, lacus felis rutrum ligula, lacinia rhoncus arcu dui eu leo. Pellentesque eu aliquam nisl. Integer vestibulum lorem vitae porta maximus. Nullam venenatis sem arcu, efficitur interdum urna dapibus vel. Aliquam aliquam eu nibh vel ultricies. Sed vulputate, purus eu porta vulputate, ligula arcu gravida neque, ut dapibus nulla enim a lorem. Donec laoreet, lectus in cursus rutrum, purus ipsum interdum mauris, eu blandit neque nisl ut ligula.</Text>
-                    <Text 
-                        pl={40} pr={40} pb={5} pt={20} fontWeight="semibold" fontSize="2xl" alignSelf="flex-start">
-                        Lorem ipsum dolor sit amet
-                    </Text>
-                    <Text pl={40} pr={40}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendrerit nisi eu erat luctus, non scelerisque magna commodo. Donec ullamcorper, neque convallis lacinia volutpat, lacus felis rutrum ligula, lacinia rhoncus arcu dui eu leo. Pellentesque eu aliquam nisl. Integer vestibulum lorem vitae porta maximus. Nullam venenatis sem arcu, efficitur interdum urna dapibus vel. Aliquam aliquam eu nibh vel ultricies. Sed vulputate, purus eu porta vulputate, ligula arcu gravida neque, ut dapibus nulla enim a lorem. Donec laoreet, lectus in cursus rutrum, purus ipsum interdum mauris, eu blandit neque nisl ut ligula.</Text>
+                    <Text pl={40} pr={40} pb={20}>This page should only open if the person signing in owns a TAUROS token. If not, perhaps a pop up window: `It seems you do not have permission to access this page. Would you like to purchase a TAUROS token? Yes/No.` If Yes, is clicked, proceed to the /tauros page. If No, close pop up window and stay where you are.</Text>
                 </Flex>
             </Flex>
             <Footer />
